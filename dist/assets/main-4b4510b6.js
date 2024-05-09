@@ -1,0 +1,7 @@
+import{c as i}from"./utilidades-e7cff688.js";import{a as n,i as s,r as a,b as d}from"./menuCarrinho-7b7529ea.js";function c(){for(const o of i){const t=`<div class='shadow-xl shadow-slate-400 rounded-lg w-[300px] m-2 flex flex-col p-2 justify-between group ${o.uniforme?"uniforme":"outros"}' id="card-produto-${o.id}">
+        <img src="./assets/${o.nomeArquivoImagem}"
+            alt="Camisa Tricolor do Grêmio 2023." class="group-hover:scale-105 duration-300 my-3 rounded-lg"/>
+        <p class="text-lg">${o.nome}</p>
+        <p>$${o.preco}</p>
+        <button id="adicionar-${o.id}" class="bg-slate-950 text-slate-200 hover:bg-slate-700"><i class="fa-solid fa-cart-plus"></i></button>
+        </div:`;document.getElementById("container-produto").innerHTML+=t}for(const o of i)document.getElementById(`adicionar-${o.id}`).addEventListener("click",()=>n(o.id))}const e=document.getElementById("container-produto");function r(){const o=Array.from(e.getElementsByClassName("hidden"));for(const t of o)t.classList.remove("hidden")}function l(){r();const o=Array.from(e.getElementsByClassName("uniforme"));for(const t of o)t.classList.add("hidden")}function u(){r();const o=Array.from(e.getElementsByClassName("outros"));for(const t of o)t.classList.add("hidden")}function m(){document.getElementById("exibir-todos").addEventListener("click",r),document.getElementById("exibir-uniformes").addEventListener("click",u),document.getElementById("exibir-outros").addEventListener("click",l)}c();s();a();d();m();
