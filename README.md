@@ -9,7 +9,7 @@
 
 <h1 align="center" style="font-weight: bold;">Projeto loja 🛒💻</h1>
 
-🌐 <a href="#ingles"> _English README below the portuguese_ </a>
+🌐 <a href="#ingles"> _English README </a> below the portuguese_
 
 ![HTML_BADGE]
 ![CSS_BADGE]
